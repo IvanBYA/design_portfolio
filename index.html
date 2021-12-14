@@ -13,32 +13,28 @@
         <title>Portfolio - Demo</title>
     </head>
     <body>
-        
         <!-- Header -->
-
         <header class="header">
             <div class="barra">
                 <div class="menu__desplegable">
                     <i class="fas fa-bars"></i>
                 </div>
-
                 <ul class="nav__item">
                     <li class="list__item">
-                        <a href="#" class="link__item">Inicio</a>
+                        <a href="index.html" class="link__item">Inicio</a>
                     </li>
                     <li class="list__item">
-                        <a href="#" class="link__item">Portfolio</a>
+                        <a href="#perfil" class="link__item">Perfil</a>
                     </li>
                     <li class="list__item">
-                        <a href="#" class="link__item">Contacto</a>
+                        <a href="#portafolio" class="link__item">Portfolio</a>
                     </li>
                     <li class="list__item">
-                        <a href="#" class="link__item">Redes</a>
+                        <a href="#contacto" class="link__item">Contacto</a>
                     </li>
                 </ul>
             </div>
         </header>
-
         <!-- Banner Header -->
         <section class="banner">
             <div class="contenedor h-100">
@@ -47,19 +43,18 @@
                 </div>
             </div>
         </section>
-
-        <section class="perfil">
+        <!-- Profile -->
+        <section class="perfil" id="perfil">
             <div class="contenedor">
                 <div class="perfil__contenido">
                     <img src="img/profile.jpg" alt="Sobre Mi" class="perfil__img">
                     <h2 class="perfil__nombre text-secondary fw-300">Sobre Mí</h2>
-                    <p class="perfil__descripcion">Hola, mi nombre es <span class="text-primary fw-400">Ivan Benavides</span> y soy Web Developer, he realizado <br/> trabajos de <span class="text-primary fw-400">Testing</span> y creando <span class="text-primary fw-400">diseños creativos UI</span> para sitios web.</p>
+                    <p class="perfil__descripcion">Hola, mi nombre es <span class="text-primary fw-400">Ivan Benavides</span> y soy Web Developer, he realizado <br/> trabajos de <span class="text-primary fw-400">Testing</span> y tambien creando <span class="text-primary fw-400">diseños creativos UI</span> para sitios web.</p>
                 </div>
             </div>
         </section>
-
         <!-- Portafolio de Proyectos -->
-        <main class="portafolio">
+        <main class="portafolio" id="portafolio">
             <h2 class="portafolio__titulo fw-400 centrar-texto no-margin">Portafolio</h2>
             <div class="contenedor">
                 <div class="proyecto">
@@ -102,14 +97,36 @@
                         <img src="img/img8.jpg" alt="Imagen 8">
                         <p >Lorem.</p>
                         <p><span class="text-primary">HTML, CSS y JS</span></p>
-                    </div>
-
-
-                    
+                    </div>  
                 </div>
             </div>
         </main>
-
+        <!-- Contacto -->
+        <section class="contacto" id="contacto">
+            <div class="contenedor__contacto">
+                <div class="contacto-contenido">
+                    <p class="contacto__titulo fw-400 centrar-texto">Contacto</p>
+                    <div class="formulario">
+                        <form>
+                            <div class="input">
+                                <input type="text" name="Nombre" class="input__nombre" placeholder="Nombre">
+                                <input type="email" name="Email" class="input__email" placeholder="Email">
+                            </div>
+                            <textarea name="Mensaje" placeholder="Mensaje" class="textarea__mensaje"></textarea>
+                            <input type="submit" value="Enviar" class="input__enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="contenedor">
+                <div class="footer__contenido">
+                    <p>Hecho con &#x02665;</p>
+                </div>
+            </div>
+        </footer>
     </body>
     <!-- JS -->
     <script src="js/script.js"></script>
